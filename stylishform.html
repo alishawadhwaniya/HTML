@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylishform.css">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h2>Login Form</h2>
+        <form action="">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*-=_+]).{8,}$" required title="at least one uppercase,one lowercase,one digit,one special character and min 8 characters">
+            <button type="submit">Submit</button>
+        </form>
+        <p>Forgot Password ?</p>
+        <a href="">Click here</a>
+    </div>
+</body>
+</html>

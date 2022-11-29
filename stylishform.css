@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(135deg,rgba(252, 123, 77, 0.95),rgb(235, 79, 105) 25% 80%,violet);
+}
+div{
+    width: 500px;
+    height: 350px;
+    margin: 160px auto;
+    background-color: rgb(248, 151, 167);
+    border-radius: 10px;
+    box-shadow: 0 0 3px pink;
+}
+h2{
+    font-family: Montserrat;
+    color: white;
+    padding: 40px 40px 25px 40px;
+    margin:0;
+}
+input{
+    display: block;
+    width: 80%;
+    font-size: larger;
+    padding:20px;
+    background-color: pink;
+    margin: 0px 20px 20px 25px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 2px white;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border-radius: 0;
+    padding: 10px 40px;
+    margin: 0 40px 20px 40px;
+    border: none;
+    font-size: 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+p{
+    font-family: Montserrat;
+    margin: 0px 0px 0px 25px;
+    color: white;
+    display: inline;
+}
+a{
+    font-family: Montserrat;
+    color: white;
+    margin: 0;
+}
