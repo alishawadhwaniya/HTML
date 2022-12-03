@@ -76,6 +76,6 @@ p{
 .img-div{
     width: 50%;
     height: 100%;
-    background: url("/images/formtask.jpg");
+    background: url("../images/formtask.jpg");
     background-size: 100% 100%;
 }
