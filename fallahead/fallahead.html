@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .img{
+            background-image: url(images/hovereffect.jpg);
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            margin: 200px auto;
+            position: relative;
+        }
+        .img::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+            width: 100%;
+            height: 100%;
+            transform-origin: bottom left;
+            transform: scale(0);
+            transition: 1s;
+        }
+        .img::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+            transform-origin: top right;
+            transform: scale(0);
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+        }
+        .img:hover::before,.img:hover::after{
+            transform: scale(1);
+        }
+        .effect{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 30px;
+            text-align: center;
+            z-index: 0;
+        }
+        .effect i{
+            position: relative;
+            color: white;
+            z-index: 2;
+        }
+        .effect::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            transform: scale(0);
+            transition: 1s;
+            z-index: 1;
+        }
+        .effect:hover::after{
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="img"></div>
+    <div class="effect">
+        <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+</body>
+</html>
